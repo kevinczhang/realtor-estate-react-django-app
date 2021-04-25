@@ -2,3 +2,5 @@ backend/venv/
 *.pyc
 backend/media/
 frontend/node_modules/
+backend/.idea
+.DS_Store
