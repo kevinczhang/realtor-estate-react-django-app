@@ -1,0 +1,4 @@
+backend/venv/
+*.pyc
+backend/media/
+frontend/node_modules/
