@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'realtors',
-    'listings'
+    'listings',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -85,10 +86,17 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'realest_estate',
         'USER': 'postgres',
-        'PASSWORD': 'Postcz_2021',
+        'PASSWORD': '[database password]',
         'HOST': 'localhost'
     }
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'learninghub7788@gmail.com'
+EMAIL_HOST_PASSWORD = '[gmail app password]'
+EMAIL_USE_TLS = True
 
 
 # Password validation
